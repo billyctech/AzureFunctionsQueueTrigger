@@ -1,0 +1,32 @@
+﻿
+@{
+	ViewData["Title"] = "Contact Us";
+}
+<div class="text-center">
+	<h1>Best Contact Form</h1>
+
+	<form method="post">
+		<fieldset>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<div class="form-group">
+						<label for="ContactName">Contact Name</label>
+						<input class="form-control" type="text" name="ContactName" value="" />
+					</div>
+				</div>
+				<div class="col-8 offset-2">
+					<div class="form-group">
+						<label for="ContactName">Email Address</label>
+						<input class="form-control" type="text" name="EmailAddress" value="" />
+					</div>
+				</div>
+				<div class="col-4 offset-4">
+					<div class="form-group">
+						<input type="submit" value="Submit" class="btn btn-block btn-primary" />
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+	<h2 class="text-success">@Html.Raw(ViewBag.Message)</h2>
+</div>
